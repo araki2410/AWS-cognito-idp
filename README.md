@@ -1,4 +1,4 @@
-# AWS cognito-idp: Get client Tokens
+# AWS cognito-idp: Get client Authentic Tokens
 
 ## Require info
 ```
@@ -9,13 +9,13 @@ userpool_ID: ap-northeast-1_aBCDEFG89
 ```
 
 - client_ID consist of 26 chars
-- userpool_ID consist of <region>_<unique_service_ID>
-- <region> is ap-northeast-1 in japan. [AWS: Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
-- <unique_service_ID> is consist of 9 chars
+- userpool_ID consist of "<region>_<unique_service_ID>"
+- "<region>" is ap-northeast-1 in japan. [AWS: Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+- "<unique_service_ID>" is consist of 9 chars
 
 ### I want to know userpool_ID and/or client_ID !
 
-- I'm an AWS user: Look AWS Web page
+- I'm an AWS user: [Look AWS Web page](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
 - I'm a not AWS user (mean I'm a user of services using AWS): Have you an account? Let's capture the packet!
 
 ----
@@ -35,5 +35,5 @@ Decode the value by base64 in any reply:
 {"AccessToken":"4LTYhFhn....SJIg",
 "ExpiresIn":3600,
 "IdToken":"ZWF.E1Fb....KCB",
-"RefreshToken":"sEMh.N....6Hp3mhze"
+"RefreshToken":"sEMhD.N....6Hp3mhze"..
 ```

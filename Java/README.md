@@ -1,7 +1,5 @@
 # Java
 
-The burp Extender, `Show cognito-idp tokens`.
-
 ```
 $ java -version
 java version "12.0.2" 2019-07-16

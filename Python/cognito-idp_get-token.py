@@ -1,10 +1,10 @@
 from aws_srp import AWSSRP
 
-user_name = "youryouryourname@gmail.com"
+user_name = "youryouryour@namemail.com"
 passwd = "passPassPassword"
-region = "ap-northeast-1" #your region
-user_poolId = "ap-northeast-1_123yyyXXX"
-clientId = ""
+region = "ap-northeast-1" # Your region
+user_poolId = "ap-northeast-1_123yyyXXX" # Your pool id
+clientId = "abcdEFG89" # Your client id
 
 aws = AWSSRP(username=user_name, password=passwd, pool_id=user_poolId,
              client_id=clientId, pool_region=region)
