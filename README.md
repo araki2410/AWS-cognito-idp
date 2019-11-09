@@ -9,9 +9,9 @@ userpool_ID: ap-northeast-1_aBCDEFG89
 ```
 
 - client_ID consist of 26 chars
-- userpool_ID consist of "<region>_<unique_service_ID>"
-- "<region>" is ap-northeast-1 in japan. [AWS: Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
-- "<unique_service_ID>" is consist of 9 chars
+- userpool_ID consist of <aws_region>_<unique_service_ID>
+- <aws_region> is ap-northeast-1 in japan. [AWS: Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+- <unique_service_ID> is consist of 9 chars
 
 ### I want to know userpool_ID and/or client_ID !
 
@@ -24,7 +24,7 @@ userpool_ID: ap-northeast-1_aBCDEFG89
 Use some capturing tool. e.g) Wireshark, Burp Suite or etc.  
 And login tha service.
 
-target: https;/cognito-idp.<region>.amazon.com  
+target: https;/cognito-idp.<aws_region>.amazon.com  
 
 client_ID is in there.   
 userpool_ID is ecrypted.
